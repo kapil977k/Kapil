@@ -1,0 +1,32 @@
+package prcs;
+
+public class Palindrome{
+
+    public static boolean isPalindrome(String s) {
+        if (s == null || s.length() == 0) {
+            return true;
+        }
+
+        s = s.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
+
+        int left = s.length() / 2 - 1;
+        int right = (s.length() % 2 == 0) ? left + 1 : left + 2;
+
+        while (left >= 0 && right < s.length()) {
+            if (s.charAt(left) != s.charAt(right)) {
+                return false;
+            }
+            left--;
+            right++;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        String str = "ABA";
+
+        System.out.println(isPalindrome(str));
+    }
+}
