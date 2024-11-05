@@ -1,0 +1,29 @@
+
+  Click `Run` to execute the snippet below!
+ 
+
+import java.io.;
+import java.util.;
+
+
+  To execute Java, please define static void main on a class
+  named Solution.
+ 
+  If you need more classes, simply define them inline.
+ 
+public class solution {
+    public static int longestWordWithSubstring(List<String> dict, String substring) {
+        int maxLength = 0;
+        for (String word : dict) {
+            if (word.toLowerCase().contains(substring.toLowerCase())) {
+                maxLength = Math.max(maxLength, word.length());
+            }
+        }
+        return maxLength;
+    }
+
+    public static void main(String[] args) {
+        List<String> dict = List.of("CODGE", "ODG", "LODGES", "SODG", "dodge", "LODGENSSSS");
+        System.out.println(longestWordWithSubstring(dict, "ODG"));
+    }
+}

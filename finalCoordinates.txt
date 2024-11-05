@@ -1,0 +1,40 @@
+
+  Click `Run` to execute the snippet below!
+ 
+
+import java.io.;
+import java.util.;
+
+
+  To execute Java, please define static void main on a class
+  named Solution.
+ 
+  If you need more classes, simply define them inline.
+ 
+public class solution {
+    public static int[] findFinalCoordinates(String directions) {
+        int x = 0, y = 0;
+        for (int i = 0; i < directions.length(); i++) {
+            char dir = directions.charAt(i);
+            int steps = 1;
+            if (i + 1 < directions.length() && Character.isDigit(directions.charAt(i + 1))) {
+                steps = directions.charAt(i + 1) - '0';
+                i++;
+            }
+            switch (dir) {
+                case 'U': y += steps; break;
+                case 'D': y -= steps; break;
+                case 'R': x += steps; break;
+                case 'L': x -= steps; break;
+            }
+        }
+        return new int[]{x, y};
+    }
+
+    public static void main(String[] args) {
+      
+        int[] result2 = findFinalCoordinates("URRDDLL");
+        System.out.println(result2[0] + "," + result2[1]);
+
+    }
+}

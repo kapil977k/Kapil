@@ -1,0 +1,29 @@
+
+  Click `Run` to execute the snippet below!
+ 
+
+import java.io.;
+import java.util.;
+
+
+  To execute Java, please define static void main on a class
+  named Solution.
+ 
+  If you need more classes, simply define them inline.
+ 
+public class solution {
+    public static List<String> searchByPrefix(String[] arr, String prefix) {
+        List<String> result = new ArrayList<>();
+        for (String word : arr) {
+            if (word.startsWith(prefix)) {
+                result.add(word);
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        String[] arr = {"apple", "applet", "bread", "aper"};
+        System.out.println(searchByPrefix(arr, "app"));
+    }
+}
