@@ -13,7 +13,7 @@ naval ships, and army units by publishing precise coordinates.
 Since we were working on-site at a DRDO campus, we had to operate in an offline environment with no internet, mobile phones, 
 or electronic devices. We relied on an offline version of GitLab for code sharing and VS Code for code merging.
 
- 
+  
 Challenges Faced:
 
 One of the main challenges was adapting to the offline environment, which took about a week. The lack of internet or electronic 
