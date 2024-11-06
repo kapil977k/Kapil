@@ -19,3 +19,22 @@ Challenges Faced:
 One of the main challenges was adapting to the offline environment, which took about a week. The lack of internet or electronic 
 devices made it difficult to reference online resources. To overcome this, we created detailed documentation for key code components 
 and referred to these documents when needed.
+
+
+Technology used
+
+Java/J2EE, Multi-threading, Hibernate/JPA, RESTful API, Microservices, Spring Boot, Spring MVC, 
+Spring Security, Apache Tomcat, RabbitMQ, ActiveMQ, JWT Tokens, Postman, Stream API, JUnit Testing, 
+Pagination, Lambdas Expressions, Exception Handling.
+
+
+Tech preparation topic wise
+
+1. Core Java and Advanced Java
+2.Spring Framework and Related Technologies
+3. Microservices Architecture
+4. APIs and Integrations
+5. Database Management
+6. Version Control and Collaboration
+7. Testing and Debugging
+
