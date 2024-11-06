@@ -28,7 +28,7 @@ Spring Security, Apache Tomcat, RabbitMQ, ActiveMQ, JWT Tokens, Postman, Stream 
 Pagination, Lambdas Expressions, Exception Handling.
 
 
-Tech preparation topic wise
+Tech preparation
 
 1. Core Java and Advanced Java
 2.Spring Framework and Related Technologies
