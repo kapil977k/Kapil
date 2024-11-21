@@ -1,0 +1,63 @@
+
+/*
+ * Click `Run` to execute the snippet below!
+ */
+
+import java.io.*;
+import java.util.*;
+
+/*
+ * To execute Java, please define "static void main" on a class
+ * named Solution.
+ *
+ * If you need more classes, simply define them inline.
+ */
+
+class Solution {
+  public static void main(String[] args) {
+
+    String str ="a +(b-c) + z - z";
+    String str1 ="(a + (b -c) +z - z)";
+    String str2 ="((a + (b -c) +z - z)";
+    String str3 ="(a + {b -c)  +z}";
+
+    System.out.println(valid(str));
+    System.out.println(valid(str1));
+    System.out.println(valid(str2));
+    System.out.println(valid(str3));
+
+
+
+  }
+
+
+  public static boolean matching(char open, char close){
+
+    return(open =='(' && close == ')') || 
+    (open =='{' && close == '}') ||
+    (open =='[' && close == ']');
+  }
+
+public static boolean valid(String str){
+
+  Stack<Character> stack = new Stack<>();
+
+  for(char ch : str.toCharArray()){
+
+if (ch== '(' || ch=='{' || ch=='['){
+
+  stack.push(ch);
+}else if(ch== ')' || ch=='}' || ch==']'){
+
+  if(stack.isEmpty() || !matching(stack.pop(), ch)){
+    return false;
+  }
+}
+
+  }
+
+return stack.isEmpty();
+
+}
+
+}
